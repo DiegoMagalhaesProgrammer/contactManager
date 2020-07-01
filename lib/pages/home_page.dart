@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:sql_macoratti/helpers/database_helper.dart';
-import 'package:sql_macoratti/models/contato.dart';
-import 'package:sql_macoratti/pages/contato_page.dart';
+import 'package:teste_persistencia/helpers/database_helper.dart';
+import 'package:teste_persistencia/models/contato.dart';
+import 'package:teste_persistencia/pages/contato_page.dart';
 
 class HomePage extends StatefulWidget {
   @override

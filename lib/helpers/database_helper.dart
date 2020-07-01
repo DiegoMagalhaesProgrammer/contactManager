@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:sql_macoratti/models/contato.dart';
+import 'package:teste_persistencia/models/contato.dart';
 
 class DatabaseHelper {
   static DatabaseHelper _databaseHelper;

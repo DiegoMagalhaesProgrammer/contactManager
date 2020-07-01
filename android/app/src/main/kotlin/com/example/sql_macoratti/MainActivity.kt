@@ -1,4 +1,4 @@
-package com.example.sql_macoratti
+package com.example.teste_persistencia
 
 import io.flutter.embedding.android.FlutterActivity
 

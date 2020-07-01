@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
-import 'package:sql_macoratti/models/contato.dart';
+import 'package:teste_persistencia/models/contato.dart';
 import 'package:image_picker/image_picker.dart';
 
 class ContatoPage extends StatefulWidget {
