@@ -23,7 +23,7 @@ class _ContatoPageState extends State<ContatoPage> {
   void initState() {
     super.initState();
     if (widget.contato == null) {
-      _editaContato = Contato(null, '', '', null);
+      _editaContato = Contato(0, '', '', null);
     } else {
       _editaContato = Contato.convertendoinverso(widget.contato.toMap());
       _nomeController.text = _editaContato.nome;
@@ -64,7 +64,7 @@ class _ContatoPageState extends State<ContatoPage> {
                 width: 200,
                 height: 200,
                 decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
+                  shape: BoxShape.circle,
                   image: DecorationImage(
                     image: _editaContato.imagem != null
                         ? FileImage(

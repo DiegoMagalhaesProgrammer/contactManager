@@ -62,23 +62,18 @@ class _HomePageState extends State<HomePage> {
           padding: EdgeInsets.all(10),
           child: Column(
             children: <Widget>[
-              Row(
+              Column(
                 children: [
                   Container(
                     width: 200,
                     height: 200,
                     decoration: BoxDecoration(
-                        shape: BoxShape.rectangle,
+                        shape: BoxShape.circle,
                         image: DecorationImage(
                             image: contatos[index].imagem != null
                                 ? FileImage(File(contatos[index].imagem))
                                 : AssetImage("assets/person.png"))),
                   ),
-                  IconButton(
-                      icon: Icon(Icons.delete),
-                      onPressed: () {
-                        _confirmaExclusao(context, contatos[index].id, index);
-                      }),
                 ],
               ),
               Padding(
@@ -94,7 +89,12 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       contatos[index].email ?? "",
                       style: TextStyle(fontSize: 20),
-                    )
+                    ), 
+                    IconButton(
+                      icon: Icon(Icons.delete),
+                      onPressed: () {
+                        _confirmaExclusao(context, contatos[index].id, index);
+                      }),
                   ],
                 ),
               ),
